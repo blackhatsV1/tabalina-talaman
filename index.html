@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Enter Data</h1>
+        <span><label>Guest Name: <input type="text" id="name"></label></span>
+        
+        <span><label>Message: <input type="text" id="message"></label></span>
+        <button onclick="submit()">send</button>
+    </div>
+
+    <div>
+        <h1>Output</h1>
+        <p id="nameout"></p>
+        <p id="messageout"></p>
+    </div>
+
+    <script>
+        function submit(){
+            let name = document.getElementById('name').value;
+            let message = document.getElementById('message').value;
+
+            document.getElementById('nameout').textContent = "Guest Name: "+ name;
+            document.getElementById('messageout').textContent ="Message: "+ message;
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
